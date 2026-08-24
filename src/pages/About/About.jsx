@@ -2,7 +2,8 @@
 function About() {
   return (
     <div>
-      about
+          about
+          nima gap
     </div>
   )
 }
