@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@layer components {
+  .container_1200 {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .navLinks li {
+    color: #272727;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .navLinks li:hover {
+    color: #72aec8;
+  }
+  .navLinks li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 2px;
+    background-color: #72aec8;
+    transition: all 0.3s ease;
+  }
+  .navLinks li:hover::after {
+    width: 100%;
+  }
+}
